@@ -1,108 +1,106 @@
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
-body{
-    background-color: rgba(153, 101, 177, 0.51);
+body {
+  background-color: rgba(153, 101, 177, 0.51);
 }
-.main{
-    background: url("./assets/Jowhareh_galleries_2_poster_1f680549-8405-402e-976c-c7d29ad3dcb0.jpeg");
-    background-position: center;
-    width: 100%;
-    height: 640px;
-    border-radius: 10px;
+.main {
+  background: url("./assets/Jowhareh_galleries_2_poster_1f680549-8405-402e-976c-c7d29ad3dcb0.jpeg");
+  background-position: center;
+  width: 100%;
+  height: 590px;
+  opacity: 0.8;
+  border-radius: 10px;
 }
-button{
-    background: transparent;
-    border: 0;
-    padding: 0;
-    cursor: pointer;
+button {
+  background: rgba(0, 0, 0, 0.1);
+  border: 0;
+  padding: 0;
+  cursor: pointer;
 }
 .toolbar,
 .sidebar,
-.burger{
-    position: fixed;
-    top: 0;
+.burger {
+  position: fixed;
+  top: 0;
 }
-.toolbar{
-    z-index: 5;
-    left: 0;
-    width: 72px;
-    height: 100%;
-    transition: 0.4s;
+.toolbar {
+  z-index: 5;
+  left: 0;
+  width: 72px;
+  height: 100%;
+  transition: 0.4s;
 }
-.sidebar{
-    z-index: 3;
-    left: 72px;
-    width: 200px;
-    height: 650px;
-    margin-top: 10px;
-    background: rgba(0, 0, 0, 0.2);
-    transition: 0.4s;
+.sidebar {
+  z-index: 3;
+  left: 79px;
+  width: 250px;
+  height: 650px;
+  margin-top: 10px;
+  background: rgba(0, 0, 0, 0.2);
+  transition: 0.4s;
 }
-.burger{
-    z-index: 1;
-    left: auto;
-    right: 0;
-    display: grid;
-    place-items: center;
-    width: 72px;
-    height: 72px;
-    background: url(./assets/icon-burger.svg) no-repeat center; 
+.burger {
+  z-index: 1;
+  left: auto;
+  right: 0;
+  display: grid;
+  place-items: center;
+  width: 72px;
+  height: 72px;
+  background: url(./assets/icon-burger.svg) no-repeat center;
 }
-body.open .burger{
-    left: auto;
-    right: 0;
-    background: url(./assets/icon-close.svg) no-repeat center;
+body.open .burger {
+  left: auto;
+  right: 0;
+  background: url(./assets/icon-close.svg) no-repeat center;
 }
-.sidebar > nav{
-    display: grid;
+.sidebar > nav {
+  display: grid;
 }
-button{
-    position: relative;
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    width: 100%;
-    height: 60px;
-    padding: 0 20px;
+button {
+  position: relative;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  padding: 0 20px;
 }
-button > img{
-    width: 20px;
-    height: 20px;
+button > img {
+  width: 20px;
+  height: 20px;
 }
-.toolbar{
-    margin-left: 8px;
-    margin-top: 10px;
-    width: 72px;
-    height: 650px;
-    background: rgba(0, 0, 0, 0.4);
-    border-top-left-radius: 10px;
-
+.toolbar {
+  margin-left: 8px;
+  margin-top: 10px;
+  width: 72px;
+  height: 650px;
+  background: rgba(0, 0, 0, 0.4);
+  border-top-left-radius: 10px;
 }
 .sidebar > nav > button > span {
-    border-radius: 4px;
-    color: #f9f9f9;
-    font-family: "Poppins";
-    font-size: 12px;
-    font-weight: 200px;
-    letter-spacing: 2px;
-    line-height: 1;
-    transition: 0.4s;
+  border-radius: 4px;
+  color: #f9f9f9;
+  font-family: "Poppins";
+  font-size: 12px;
+  font-weight: 200px;
+  letter-spacing: 2px;
+  line-height: 1;
+  transition: 0.4s;
 }
-
-
 
 @media (width < 500px) {
-    .sidebar {
-      translate: -110% 0;
-    }
-  
-    body.open .sidebar {
-      translate: 0 0;
-    }
+  .sidebar {
+    translate: -110% 0;
+  }
+
+  body.open .sidebar {
+    translate: 0 0;
+  }
 }
 @media (width >= 500px) {
-    .burger {
-      display: none;
-    }
+  .burger {
+    display: none;
+  }
 }
