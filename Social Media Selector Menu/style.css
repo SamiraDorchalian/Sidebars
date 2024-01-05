@@ -1,58 +1,58 @@
-body{
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100vh;
-    justify-content: center;
-    font-family: sans-serif;
-    background: linear-gradient(135deg, #606c38 20%,#bc6c25 80%);
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+  font-family: sans-serif;
+  background: linear-gradient(135deg, #a3b18a 50%, #344e41 50%);
 }
-.menu{
-    background-color: lightgray;
-    width: 300px;
-    opacity: .3;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
-    cursor: pointer;
+.menu {
+  background-color: rgb(211, 211, 211);
+  width: 300px;
+  opacity: 0.3;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  cursor: pointer;
 }
-.menu .arrow-icon{
-    transition: transform .2s;
+.menu .arrow-icon {
+  transition: transform 0.2s;
 }
-.menu p{
-    margin: 0 10px;
-    display: flex;
-    align-items: center;
+.menu p {
+  margin: 0 10px;
+  display: flex;
+  align-items: center;
 }
-.social-lists{
-    background: lightgray;
-    width: 300px;
-    padding: 10px;
-    opacity: .3;
-    list-style: none;
-    border-radius: 5px;
+.social-lists {
+  background: lightgray;
+  width: 300px;
+  padding: 10px;
+  opacity: 0.3;
+  list-style: none;
+  border-radius: 5px;
 }
-.social-lists li{
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    transition: padding .2s linear;
+.social-lists li {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: padding 0.2s linear;
 }
-.social-lists li:hover{
-    background: darkgray;
-    border-radius: 5px;
-    padding-left: 10px;
+.social-lists li:hover {
+  background: darkgray;
+  border-radius: 5px;
+  padding-left: 10px;
 }
-.social-lists li .icons{
-    margin: 0 10px;
-    width: 30px;
+.social-lists li .icons {
+  margin: 0 10px;
+  width: 30px;
 }
-.rotate .arrow-icon{
-    transform: rotate(180deg);
+.rotate .arrow-icon {
+  transform: rotate(180deg);
 }
-.hide{
-    visibility: hidden;
+.hide {
+  visibility: hidden;
 }

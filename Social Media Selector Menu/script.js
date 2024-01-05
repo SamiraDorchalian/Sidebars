@@ -3,15 +3,18 @@ const menuTextEl = document.querySelector(".menu p");
 const socialLists = document.querySelector(".social-lists");
 const liEls = document.querySelectorAll(".social-lists li");
 
-menuEl.addEventListener("click", () => {
-    socialLists.classList.toggle("hide");
-    menuEl.classList.toggle("rotate");
+const funEl_two = () => {
+  socialLists.classList.toggle("hide");
+  menuEl.classList.toggle("rotate");
+};
+const funEL_one = () => {
+  menuTextEl.innerHTML = liEls.innerHTML;
+  socialLists.classList.add("hide");
+  menuEl.classList.toggle("rotate");
+};
+
+liEls.forEach((liEls) => {
+  liEls.addEventListener("click", funEL_one);
 });
 
-liEls.forEach(liEls =>{
-    liEls.addEventListener("click", ()=>{
-        menuTextEl.innerHTML = liEls.innerHTML;
-        socialLists.classList.add("hide");
-        menuEl.classList.toggle("rotate");
-    })
-})
+menuEl.addEventListener("click", funEl_two);
